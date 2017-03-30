@@ -1,17 +1,19 @@
-import { Component } from '@angular/core';
-import {ToasterModule, ToasterService} from 'angular2-toaster';
+import { Component, OnInit } from '@angular/core';
+import {ToasterService} from 'angular2-toaster';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-toaster',
+  templateUrl: './toaster.component.html',
+  styleUrls: ['./toaster.component.css']
 })
-export class AppComponent {
+export class ToasterComponent implements OnInit {
 
   constructor(private toasterService: ToasterService) {
     this.toasterService = toasterService;
   }
-  title = 'app works!';
+
+  ngOnInit() {
+  }
 
   popToast() {
     var toast: any = {
@@ -22,4 +24,5 @@ export class AppComponent {
 
     this.toasterService.pop(toast);
   }
+
 }
