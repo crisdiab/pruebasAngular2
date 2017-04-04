@@ -3,3 +3,9 @@
 </h1>
 <toaster-container></toaster-container>
 <button (click)="popToast()">ver</button>
+<ul>
+  <div *ngFor="let item of items | sortByAttr : sorting ">
+
+<p>{{item.label}}</p>
+  </div>
+</ul>
