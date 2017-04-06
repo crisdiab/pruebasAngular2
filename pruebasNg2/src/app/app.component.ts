@@ -41,9 +41,9 @@ ordenar(){
 
 }
    sorting: any = {
-     sortByCol: 'priceCategory', // object attribute's name to sort by
+     sortByCol: 'category', // object attribute's name to sort by
      sortDir: 'desc',     // 'asc' or 'desc'
-     sortType: 'Number'  // 'String', 'Number', or 'Date'
+     sortType: 'String'  // 'String', 'Number', or 'Date'
    }
 
 
